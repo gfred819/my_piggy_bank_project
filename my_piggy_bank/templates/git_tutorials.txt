@@ -1,0 +1,20 @@
+- GIT
+Git is a functionality that enables programmers to be able to:
+- Create versions of their code so that they can roll back to a previous version in case if any thing goes wrong
+- Helps multiple programmers to be able to collaborate on the same project, thus each person can create a copy of the main project,
+add their own code and push back to the main project so that it is merged together.
+
+One platform that helps us to push codes is GITHUB.
+
+GITHUB
+- Github is a centralized platform where multiple developers all over the world can store and share their codes  with other developers around the world.
+- It can also serve as your portfolio.
+- To get started, you will need to create an account on github.com
+
+
+Steps in using GIT
+- Initializet the folder or project as a git repository. This will enable git to start tracking all the files in that folder.
+
+-  Add the latest file changes through staging. This enables git to track the latest files
+- Commit the staged changes with a message.
+- Push the commited changes to Github

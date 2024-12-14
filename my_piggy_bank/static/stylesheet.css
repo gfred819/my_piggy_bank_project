@@ -1,0 +1,30 @@
+body{
+background-color:gold;
+font-family: cursive;
+}
+
+th, td {
+    padding: 15px;
+    text-align: center;
+    border-bottom: 1px solid lawngreen;
+}
+
+th {
+    background-color: #3498db; 
+    color: burlywood; 
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+a[href*="Delete"] {
+    background-color: orange; 
+}
+
+a[href*="Edit"] {
+    background-color: hotpink; 
+}
+
+.p{
+    background-color: black;
+    color: wheat;
+}

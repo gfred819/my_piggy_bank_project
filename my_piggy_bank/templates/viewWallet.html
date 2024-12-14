@@ -1,0 +1,41 @@
+{% load static %}
+<!DOCTYPE html>
+<head>
+    <title>My Piggy Bank</title>
+    <link href="{% static 'stylesheet.css' %}" rel="stylesheet">
+</head>
+<body>
+    <h1>All Wallet</h1>
+    <p class="p"> This is my table paragraph</p>
+    <p>This is another paragraph</p>
+        <table border="2px" cellpadding="20px" cellspacing="10px">
+
+            <thead> 
+                <th> Username</th>
+                <th>CurrentBalance</th>
+                <th> FormerBalance</th>
+                <th> ModifiedBy</th>
+                <th>Actions</th>
+
+
+            
+            </thead>
+
+            {% for Wallet in WalletList %}      
+
+                <tr>
+                    
+                    
+                    <td>{{ Wallet.Username}}</td>
+                    <td> {{Wallet.CurrentBalance}}</td>
+                    <td> {{Wallet.FormerBalance}}</td>
+                    <td> {{Wallet.ModifiedBy}}</td>
+                    <td> <a href="viewWallet.html" >Edit</a>  |   <a href="createWallet.html" >Delete</a></td>
+                
+                </tr>
+            {% endfor %}
+                
+        </table>
+
+        </body>
+</html>

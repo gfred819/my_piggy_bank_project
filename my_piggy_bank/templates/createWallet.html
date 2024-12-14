@@ -1,0 +1,29 @@
+{% load static %}
+<!DOCTYPE html>
+<head>
+    <title>My Piggy Bank</title>
+    <link href="{% static 'stylesheet.css' %}" rel="stylesheet">
+</head>
+<body>
+    <div>
+        <h1>My Piggy Bank</h1>
+        <form action="createWallet" method="post">
+            {% csrf_token %} 
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" >
+            
+            <label for="currentBalance">Current Balance:</label>
+            <input type="text" id="currentBalance" name="currentBalance" >
+            
+            <label for="modifiedBy">Modified By:</label>
+            <input type="text" id="modifiedBy" name="modifiedBy" >
+            
+            <label for="formerBalance">formerBalance:</label>
+            <input type="text" id="formerBalance" name="formerBalance" >
+
+            <button type="submit">Create Wallet</button>
+        </form>
+    </div>
+        
+        </body>
+</html>
